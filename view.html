@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List</title>
+</head>
+<body>
+
+<h3>Users Details </h3>
+<table border=5>
+    <thead>
+        <td>id</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>ipaddress</td>
+    </thead>
+
+    {% for row in rows %}
+
+        <tr>
+           <td>{{row["id"]}}</td>
+            <td>{{row["firstname"]}}</td>
+            <td>{{row["lastname"]}}</td>
+            <td>{{row["email"]}}</td>
+            <td>{{row["current_login_ip"]}}</td>
+        </tr>
+
+    {% endfor %}
+</table>
+<br><br>
+
+<a href="/">Go back to home page</a>
+
+</body>
+</html>
